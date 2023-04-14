@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title> Schedule appointment</title>
     <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="form.html">Schedule A Adventure</a></li>
-          <li class="dropdown">
-            <a href="dive.html">Diving adventure</a>
-          </li>
+        <ul><!-- making list of links so that it works like a colum-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="form.html">Schedule A Adventure</a></li>
+            <li class="dropdown">
+                <a href="dive.html">Diving adventure</a>
+            </li>
         </ul>
-      </nav>
+    </nav>
+    <header>
+        <h1 id="header"> SeaBubbles</h1>
+    </header>
 </head>
+
 <body>
-    
+    <form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<input type="submit" value="Submit"> <!--button to go to thank you page-->
+	</form>
 </body>
+<footer>
+    <p>Contact Us:</p>
+    <ul> <!-- making a uniformed list so then i can center-->
+        <li><a href="mailto:SeaBubblesLLC@example.com"><i class="fa fa-envelope"></i> Email Us</a></li>
+        <li><a href="#">Address:</a></li>
+        <li><a href="safety.html"> Safety Form</a></li> <!-- Keeping safety concerns minimal-->
+    </ul>
+</footer>
+
 </html>
 <!-- Working on the navigation, Header, footer, form page-->
