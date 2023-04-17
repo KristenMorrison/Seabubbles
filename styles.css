@@ -124,7 +124,7 @@ body {
     display: grid;
     column-gap: 40px;
     grid-template-columns: auto auto;
-    background-color: #045eb9;
+    background-color: #17d4d4ec;
     padding: 3% 3% 1% 3%;
     height: 600px;
 
