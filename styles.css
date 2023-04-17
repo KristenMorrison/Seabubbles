@@ -1,3 +1,68 @@
-*{
-    Padding: auto;
+/* Project: Sea Bubbles Group Assignment | Author: Mitchell Eddings | Branch: mitchell | Date Made: 16 April 2023 | Page Name: styles.css */
+
+/* containers */
+body {
+    Padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+
+/* Text */
+h1 {
+    text-align: center;
+}
+
+
+/* ID */
+#phold {
+    font-size: 30px;
+}
+
+/* classes */
+.safety-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.safety-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.safety-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    flex: 1;
+}
+.clearFloat{
+    clear: both;
 }
