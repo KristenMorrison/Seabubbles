@@ -21,7 +21,7 @@ main {
     align-items: center;
     padding: 55px 20px;
     margin: 20px;
-    background-color: #4e4e4e;
+    background-color: #727272;
 }
 
 section {
@@ -65,6 +65,9 @@ h1 {
     text-align: justify;
     flex: 1;
 }
-.clearFloat{
-    clear: both;
+.thx{
+    padding: 25px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #7EBCE6;
 }
