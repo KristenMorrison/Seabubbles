@@ -2,7 +2,7 @@
 
 
 
-/* containers */
+/* #region Containers */
 body {
     Padding: 0px;
     margin: 0px;
@@ -17,7 +17,7 @@ header {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 55px 20px;
     margin: 20px;
@@ -30,13 +30,20 @@ section {
     grid-gap: 20px;
     width: 100%;
 }
+/* #endregion */
 
-/* Text */
+/* #region Text */
 h1 {
     text-align: center;
+    font-family: 'Titan One', cursive;
 }
+h2{
+    font-family: 'Titan One', cursive;
+    font-weight: lighter;
+}
+/* #endregion */
 
-/* classes */
+/* #region classes */
 
 .phold {
     font-size: 30px;
@@ -71,3 +78,4 @@ h1 {
     margin: 10px;
     background-color: #7EBCE6;
 }
+/* #endregion  */
