@@ -6,13 +6,44 @@
 body {
     Padding: 0px;
     margin: 0px;
+    font-family: 'Titan One', cursive;
 }
 
 header {
-    background-color: #333;
+    background-color: #ffd6e0;
+    color: #7cc6fe;
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
+    padding: 25px;
+    font-family: 'Titan One', cursive;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(136, 136, 136);
 }
 
 main {
@@ -21,8 +52,7 @@ main {
     align-items: center;
     padding: 55px 20px;
     margin: 20px;
-    background-color: #727272;
-}
+    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);}
 
 section {
     display: grid;
@@ -30,6 +60,34 @@ section {
     grid-gap: 20px;
     width: 100%;
 }
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: form-enter 0.5s ease-out;
+    /* starting max with and length of text box and making the background color and setting a border in the form*/
+}
+
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    /* margin: 10%; */
+    text-align: center;
+    font-family: 'Titan One', cursive;
+    background-color: #f2b79f;
+    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    /* setting the footer to be the same color and graintaint */
+}
+ul{ 
+    list-style: none;
+
+}
+
 /* #endregion */
 
 /* #region Text */
@@ -37,13 +95,22 @@ h1 {
     text-align: center;
     font-family: 'Titan One', cursive;
 }
-h2{
+
+h2 {
     font-family: 'Titan One', cursive;
     font-weight: lighter;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Sets the text before the submittion box into black and white*/
+}
+
 /* #endregion */
 
-/* #region classes */
+/* #region classes and id's */
 
 .phold {
     font-size: 30px;
@@ -57,6 +124,7 @@ h2{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .safety-item img {
     width: 200px;
     height: 200px;
@@ -72,102 +140,77 @@ h2{
     text-align: justify;
     flex: 1;
 }
-.thx{
+
+.thx {
     padding: 25px;
     border: 2px solid black;
     margin: 10px;
     background-color: #7EBCE6;
-*{
-    Padding: 0px;
-    margin:0px;
-}
-header{
-background-color: #ffd6e0;
-color: #7cc6fe;
 
 }
-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
-    padding: 10px;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: inline;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  nav ul li:hover {
-    background-color: rgb(136, 136, 136);
-  }
-  #header {
+
+#header {
     background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
     animation: water 10s ease-in-out infinite;
     text-align: center;
     margin: 0px;
-    
-  }
-  @keyframes water {/*This adds to the class header a water affect of just building of colors and being able to change over time*/
+
+}
+
+/* #endregion  */
+
+/* #region keyframes */
+@keyframes water {
+
+    /*This adds to the class header a water affect of just building of colors and being able to change over time*/
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
 }
-  footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-top: 10%;
-    text-align: center;
-    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);/* setting the footer to be the same color and graintaint */
-    background-color:#f2b79f ;  
-}
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    animation: form-enter 0.5s ease-out;/* starting max with and length of text box and making the background color and setting a border in the form*/
-}
-@keyframes form-enter { /*entering the screen*/
+
+@keyframes form-enter {
+
+    /*entering the screen*/
     from {
         transform: translateY(-50%);
         opacity: 0;
-    }/* Start from the being top of the screen so that its not visuable and has no way of being seen*/ 
+    }
+
+    /* Start from the being top of the screen so that its not visuable and has no way of being seen*/
     to {
-        transform: translateY(0);/* Ends in the middle of the screen where it is visuable doing a little appear animation*/
+        transform: translateY(0);
+        /* Ends in the middle of the screen where it is visuable doing a little appear animation*/
         opacity: 1;
     }
 }
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    /* Sets the text before the submittion box into black and white*/
+
+/* #endregion */
+
+/* #region inputs */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*setting the submit buttons default browsing */
 }
-input[type="text"], input[type="email"] {
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="text"],
+input[type="email"] {
     display: block;
     width: 100%;
     padding: 10px;
@@ -177,16 +220,6 @@ input[type="text"], input[type="email"] {
     font-size: 16px;
     /* sets text box size input areas for user and creates a box style */
 }
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-/*setting the submit buttons default browsing */
-}
-/* #endregion  */
-input[type="submit"]:hover {
-    background-color: #3e8e41;
-}/*this is to change the color of the submit button when you hover over it.*/
+
+/*this is to change the color of the submit button when you hover over it.*/
+/* #endregion */
