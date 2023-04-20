@@ -1,37 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Titan+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-   
-    <title>Diving package</title>
+    <title>Dive Adventures</title>
 </head>
-<img src="Seabubbleslogo.png" alt="Logo" width="50" height="50"> 
-<nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="form.html">Schedule An Adventure</a></li>
-      <li class="dropdown">
-        <a href="dive.html">Diving adventure</a>
-      </li>
-    </ul>
-  </nav>
-  <header> 
-     <h1 id="header"> SeaBubbles</h1>
-    </header>
+
 <body>
-    
+
+    <!--First dive container for Sea Tiger-->
+    <div class="DiveContainer1">
+        <h1 id="DiveHeader">Dive Adventures </h1>
+        <div class="seatiger">
+            <img id="seatigerimg" src="seatiger.png" alt="Sea Tiger Shipwreck">
+        </div>
+        <div class="seaTigerText">
+            <h2 class="shipwreckTitles">Sea Tiger Shipwreck</h2>
+            <p>The Sea Tiger is a former Chinese trading vessel originally named Yun Fong Seong No. 303. It was
+                confiscated in the early 1990's for carrying 90+ illegal immigrants into the state of Hawaii. Purchased
+                by Voyager Submarines, then cleaned up and sank in 1999 as part of a dive enrichment effort, the Sea
+                Tiger is 150-feet of incredible sights.</p>
+            <div>
+                <form action="form.html" method="get"> <!--clickable button- should link to form page-->
+                    <input class="bookButton2" type="submit" value="Book Now">
+                </form>
+            </div>
+            <ul class="DiverInfo">
+                <li>Location: West of Waikiki, Honolulu, Hawaii</li>
+                <li>Depth: 80-110 Feet</li>
+                <li>Visibility: 15-30’</li>
+                <li>Marine Life: Sea Turtles, Moray Eels, Eagle Rays, Reef Sharks</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--2nd dive container for Y0-257-->
+
+    <div class="DiveContainer2">
+        <div class="YO257">
+            <img id="YO257img" src="YO257.png" alt="YO-257 Shipwreck">
+        </div>
+        <div class="yoText">
+            <h2 class="shipwreckTitles">Y0-257 Shipwreck</h2>
+            <p>The YO-257, a 175-foot long navy oiler, sits on the sand in 100-feet of water off the south shore of
+                Oahu. You’ll have a breathtaking view of Diamond Head on your boat ride to this wreck. It was
+                purposely
+                sunk in 1989 to form an artificial reef by Atlantis Submarines and has since been teaming with
+                marine
+                life. </p>
+            <div>
+                <form action="form.html" method="get"> <!--clickable button- should link to form page-->
+                    <input class="bookButton2" type="submit" value="Book Now">
+                </form>
+            </div>
+            <ul class="DiverInfo">
+                <li>Location: Oahu, Hawaii</li>
+                <li>Depth: 120 Feet</li>
+                <li>Visibility: 50-100’</li>
+                <li>Marine Life: Sea Turtles, Eagle Rays, Butterfly Fish, Reef Sharks, Octopus</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--charter and short company info section - side by side info container-->
+    <div class="gridContainer">
+        <div class="charters">
+            <h1 id="charterHeader">E Kipa Mai!</h1>
+            <p id="joinUs">(Come visit us)</p>
+            <p>Morning charters available for beginner dives.</p>
+            <p>Deep dives available in afternoon for certified divers.</p>
+            <p>Children over 10 yrs. old welcome.</p>
+        </div>
+
+        <div class="features">
+            <h2 class="featuresHeader">Why dive with us?</h2>
+            <p>We keep it small. Dive groups are kept at a 1:4 ratio. This means more personal attention from your dive instructor.</p>
+            <p>We are conveniently located within 10 minutes of hotels. Ground transportation provided to your dive
+                meet
+                location at Kewalo Basin</p>
+            <p>We supply all equipment needed for your dive. Feel free to bring your own.</p>
+            <p>Souvenir photos of your dive taken by instructor.</p>
+            <p>Wedding and special occasion packages available. Inquire on the contact form for details.</p>
+            <h2 class="featuresHeader">You're in good hands</h2>
+            <p>Certified PADI instructors and Divemasters</p>
+            <p>15 years experience</p>
+            <p>Coast Guard certified boats</p>
+        </div>
+    </div>
+
+    <!--company review section with grid container for indiv. reviews-->
+    <div class="reviewContainer">
+        <div class="reviews">
+            <h1 class="reviewHeaders">Amazing Instructors!</h1>
+            <p>Seabubbles is the perfect place to get PADI certified or to book a dive trip and Kirsten was an
+                outstanding instructor. She was incredibly calm and encouraging as I took my first breath
+                underwater.
+                You feel completely safe with her. I even got fresh pineapple between dives!</p><br>
+            <p class="location">- Antonio L.</p>
+            <p class="location">London, ENG</p>
+        </div>
+
+        <div class="reviews">
+            <h1 class="reviewHeaders">First Class Company</h1>
+            <p>Thanks to Seabubbles for another fantastic diving experience. The whole team make my diving
+                experience so
+                enjoyable. Highly recommend and wouldn’t dive with anyone else.
+            <p><br>
+            <p class="location">- Thomas V.</p>
+            <p class="location">Austin, TX</p>
+        </div>
+
+        <div class="reviews">
+            <h1 class="reviewHeaders">Great Diving Experience</h1>
+            <p>Great diving experience with heaps of fish, moray eels and octopus! The staff were also super
+                friendly
+                and helpful!</p><br>
+            <p class="location">- Alicia S.</p>
+            <p class="location">Brisbane, AUS</p>
+        </div>
+
+        <div class="reviews">
+            <h1 class="reviewHeaders">Beautiful Dives</h1>
+            <p>My wife and I booked the Sea Tiger dive and we were not disappointed! We saw a lot of beautiful sea
+                turles and native fish. We also got to see a few rays and reef sharks.We were a little afraid of the
+                sharks but our instructor was very calm and knowledgeable. We knew we were in good hands.</p><br>
+            <p class="location">- John F.</p>
+            <p class="location">Miami, FL</p>
+        </div>
+    </div>
 </body>
-<footer>
-    <p>Contact Us:</p>
-    <ul>
-    <li><a href="mailto:SeaBubblesLLC@example.com"><i class="fa fa-envelope"></i> Email Us</a></li> 
-    <li><a href="#">Address:</a></li>
-    <li><a href="safety.html"> Safety Form</a></li>
-    <li><p>SeaBubbles copy right 2023</p></li> 
-    </ul>
-  </footer>  
+
 </html>
-<!-- Working on the navigation, Header, footer, form page-->
