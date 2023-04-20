@@ -128,7 +128,7 @@ body {
     column-gap: 40px;
     grid-template-columns: auto auto;
     background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
-    padding: 3% 3% 1% 3%;
+    padding: 4% 3% 1% 3%;
     height: 600px;
 
 }
