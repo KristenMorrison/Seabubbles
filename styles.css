@@ -1,6 +1,8 @@
 /* dive.html page */
+
+
 body {
-    margin-left: 10%;
+      margin-left: 10%;
     margin-right: 10%;
 }
 
@@ -18,6 +20,7 @@ body {
 }
 
 .DiveContainer1 {
+  margin: auto;
     width: 100%;
     background-color: black;
 }
@@ -178,7 +181,7 @@ body {
     display: grid;
     column-gap: 40px;
     grid-template-columns: auto auto auto auto;
-    padding: 7% 3% 3% 3%;
+    padding: 9% 3% 3% 3%;
     height: 700px;
 }
 
@@ -276,7 +279,6 @@ body {
         
     }
 }
-
 
 
 
