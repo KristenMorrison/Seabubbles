@@ -181,13 +181,14 @@ body {
     display: grid;
     column-gap: 40px;
     grid-template-columns: auto auto auto auto;
-    padding: 5% 3% 3% 3%;
+    padding: 6% 3% 3% 3%;
     height: 700px;
 }
 
 .reviewHeaders {
     font-family: 'Titan One', cursive;
     font-weight: lighter;
+    
 }
 
 .reviews {
@@ -197,13 +198,14 @@ body {
     background-color: black;
     opacity: 80%;
     color: aliceblue;
-    padding: 5%;
-    height: 550px;
+    padding: 7%;
+    height: 500px;
 }
 
 .location {
-    line-height: 0.5;
-    font-style: italic;
+  font-size: 1.3em;
+   
+   
 }
 
 /* "Mostly" responsive design */
