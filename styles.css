@@ -22,8 +22,6 @@
     background-color: black;
     float: right;
     clear: both;
-  
-    
    
 }
 
@@ -77,35 +75,27 @@
   
 }
 
-.bookButton1 {
+.bookButton {
     font-family: 'Titan One', cursive;
-    background-color: aliceblue;
+    background-color: rgba(21, 187, 73,1);
     font-size: 1.5em;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-left: 120%;
-    margin-top: -10%;
-    
- 
- 
-
-   
+    padding: 4% 3%;
+   border-radius: 5px;
+   text-decoration: none;
+   color:#f2f2f2;
+}
+.bookButton:hover{
+    font-family: 'Titan One', cursive;
+    background-color: rgba(21, 187, 73,.8);
+    font-size: 1.5em;
+    padding: 4% 3%;
+   border-radius: 5px;
+   color:#f2f2f2;
 }
 
-.bookButton2 {
-    font-family: 'Titan One', cursive;
-    background-color: aliceblue;
-    font-size: 1.5em;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-left: 120%;
-    margin-top: -10%;
-  
- 
+.bookButBox{
+    display: flex;
+    align-content: end;
 }
 
 
@@ -125,6 +115,8 @@
     font-weight: lighter;
     font-size: 1.8em;
     line-height: 0.5;
+    
+    
 }
 
 #joinUs {
@@ -193,8 +185,6 @@
     font-style: italic;
 }
 
-/* "Mostly" responsive design */
-
 
 
 
@@ -227,11 +217,6 @@ nav {
     font-family: 'Titan One', cursive;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 nav ul li {
     float: left;
@@ -276,7 +261,6 @@ form {
 }
 
 footer {
-    /* position: absolute; */
     bottom: 0;
     width: 100%;
     /* margin: 10%; */
