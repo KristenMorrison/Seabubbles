@@ -220,8 +220,7 @@ main {
     flex-direction: row;
     align-items: center;
     padding: 10% 10%;
-    margin: 20px;
-    background-image: linear-gradient(to right, #3cd3ad, #7ebce6);
+    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
 }
 
 section {
