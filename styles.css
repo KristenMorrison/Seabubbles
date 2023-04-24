@@ -1,3 +1,6 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 
 #DiveHeader {
     font-family: 'Titan One', cursive;
@@ -7,22 +10,31 @@
     text-align: center;
     margin-top: 0%;
     padding-top: 2%;
-
-
-
 }
 
 .DiveContainer1 {
-    width: 100%;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6, #7ebce6);
+    color: white;
+    padding: 15px;
 }
 
 .DiveContainer2 {
-    width: 100%;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #7ebce6, #003F91);
+    padding: 15px;
     float: right;
     clear: both;
-   
+
+}
+
+.gridContainer {
+    margin-top: 62%;
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: auto auto;
+    background-image: linear-gradient(to bottom, #003F91, #003F91, #000000);
+    padding: 3% 3% 1% 3%;
+    height: 600px;
+
 }
 
 #seatigerimg {
@@ -59,9 +71,6 @@
     padding-left: 5%;
     margin-right: 40%;
     color: aliceblue;
-  
-    
-    
 }
 
 .DiverInfo {
@@ -71,52 +80,40 @@
     list-style-type: none;
     padding-left: 0;
     padding-bottom: 3%;
-    
-  
 }
 
 .bookButton {
     font-family: 'Titan One', cursive;
-    background-color: rgba(21, 187, 73,1);
+    background-color: rgba(21, 187, 73, 1);
     font-size: 1.5em;
     padding: 4% 3%;
-   border-radius: 5px;
-   text-decoration: none;
-   color:#f2f2f2;
-}
-.bookButton:hover{
-    font-family: 'Titan One', cursive;
-    background-color: rgba(21, 187, 73,.8);
-    font-size: 1.5em;
-    padding: 4% 3%;
-   border-radius: 5px;
-   color:#f2f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
-.bookButBox{
+.bookButton:hover {
+    font-family: 'Titan One', cursive;
+    background-color: rgba(21, 187, 73, .8);
+    font-size: 1.5em;
+    padding: 4% 3%;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+.bookButBox {
     display: flex;
     align-content: end;
 }
 
 
-.gridContainer {
-    margin-top: 62%;
-    display: grid;
-    column-gap: 40px;
-    grid-template-columns: auto auto;
-    background-color: #2ebdbd;
-    padding: 3% 3% 1% 3%;
-    height: 600px;
 
-}
 
 #charterHeader {
     font-family: 'Titan One', cursive;
     font-weight: lighter;
     font-size: 1.8em;
     line-height: 0.5;
-    
-    
 }
 
 #joinUs {
@@ -154,7 +151,7 @@
 
 /* 3rd section - review container w/ grid layout */
 .reviewContainer {
-    background-image: url(scubadiver.jpg);
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size: 100%;
     display: grid;
@@ -164,30 +161,21 @@
     height: 700px;
 }
 
-.reviewHeaders {
-    font-family: 'Titan One', cursive;
-    font-weight: lighter;
-}
-
 .reviews {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: center;
     background-color: black;
-    opacity: 80%;
+    opacity: 100%;
     color: aliceblue;
     padding: 5%;
-    height: 500px;
+    height: 550px;
 }
 
 .location {
     line-height: 0.5;
     font-style: italic;
 }
-
-
-
-
 
 
 
@@ -203,44 +191,38 @@ body {
 }
 
 header {
-    background-color: #ffd6e0;
-    color: #7cc6fe;
+    background-color: #3cd3ad;
+    color: #ffffff;
+    padding-bottom: 15px;
 
 }
 
 nav {
     position: sticky;
     top: 0;
-    right: 0;
-    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
+    margin: 10px 0px;
+    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
     padding: 25px;
     font-family: 'Titan One', cursive;
 }
 
 
 nav ul li {
-    float: left;
-}
-
-nav ul li a {
+    
     display: inline;
-    color: #fff;
     text-align: center;
     padding: 10px;
-    text-decoration: none;
 }
 
-nav ul li:hover {
-    background-color: rgb(136, 136, 136);
-}
 
 main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 55px 20px;
+    padding: 10% 10%;
     margin: 20px;
-    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);}
+    background-image: linear-gradient(to right, #3cd3ad, #7ebce6);
+}
 
 section {
     display: grid;
@@ -251,9 +233,9 @@ section {
 
 form {
     max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
+    margin: 20px auto;
+    padding: 20px 5rem;
+    background-image: linear-gradient(to bottom, #7ebce6, #3cd3ad, #7ebce6);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     animation: form-enter 0.5s ease-out;
@@ -266,11 +248,11 @@ footer {
     /* margin: 10%; */
     text-align: center;
     font-family: 'Titan One', cursive;
-    background-color: #f2b79f;
-    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    background-image: linear-gradient(to top, #3cd3ad, #7ebce6);
     /* setting the footer to be the same color and graintaint */
 }
-ul{ 
+
+ul {
     list-style: none;
 
 }
@@ -286,6 +268,17 @@ h1 {
 h2 {
     font-family: 'Titan One', cursive;
     font-weight: lighter;
+}
+
+a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+    background-color: rgb(136, 136, 136);
 }
 
 label {
@@ -304,7 +297,7 @@ label {
 }
 
 .safety-item {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
@@ -330,10 +323,7 @@ label {
 
 .thx {
     padding: 25px;
-    border: 2px solid black;
-    margin: 10px;
     background-color: #7EBCE6;
-
 }
 
 #header {
@@ -342,6 +332,11 @@ label {
     text-align: center;
     margin: 0px;
 
+}
+
+.logo{
+    position:relative;
+    bottom: 15px;
 }
 
 /* #endregion  */
