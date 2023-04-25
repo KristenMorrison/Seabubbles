@@ -344,6 +344,7 @@ label {
     color: aliceblue;
     font-size: 1.05em;
     text-align: center;
+  
 }
 
 /* 3rd section - review container w/ grid layout */
@@ -370,7 +371,7 @@ label {
 }
 
 .location {
-    line-height: 0.5;
+    line-height: 0;
     font-style: italic;
 }
 
