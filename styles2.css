@@ -1,0 +1,78 @@
+* {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+    margin-bottom: 8px;
+    font-size: 64px;
+}
+
+h2 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+
+}
+
+h3 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+    padding-bottom: 16px;
+}
+
+.threeinfos {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcomebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+}
+
+#h2 {
+    position: absolute;
+    margin-top: -750px;
+    color: bisque;
+    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#pullup {
+    position: absolute;
+    color: bisque;
+    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    margin-top: -225px;
+    margin-left: 700px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+
+}
+
+.info {
+    width: 30%;
+    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    border-radius: 12px;
+    padding:12px;
+    margin:12px;
+
+}

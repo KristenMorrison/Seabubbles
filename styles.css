@@ -1,6 +1,197 @@
+/* Project: Sea Bubbles Group Assignment | Branch Author: Mitchell Eddings | Branch: mitchell | Date Made: 16 April 2023 | Page Name: styles.css */
 * {
     font-family: 'Open Sans', sans-serif;
+    
 }
+
+/* #region Containers */
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #3cd3ad;
+    color: #ffffff;
+    padding-bottom: 15px;
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    margin: 10px 0px;
+    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
+    padding: 25px;
+    font-family: 'Titan One', cursive;
+    order:1;
+}
+
+
+nav ul li {
+
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10% 10%;
+    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px 5rem;
+    background-image: linear-gradient(to bottom, #7ebce6, #3cd3ad, #7ebce6);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: form-enter 0.5s ease-out;
+    /* starting max with and length of text box and making the background color and setting a border in the form*/
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    /* margin: 10%; */
+    text-align: center;
+    font-family: 'Titan One', cursive;
+    background-image: linear-gradient(to top, #3cd3ad, #7ebce6);
+    /* setting the footer to be the same color and graintaint */
+}
+
+ul {
+    list-style: none;
+
+}
+
+/* #endregion */
+
+/* #region Since img doesn't really belong in any of the regions I have going, I've put it right here. All alone in it's own region. */
+img {
+    /* position: relative; */
+    max-width: 100%;
+    order:0;
+}
+
+/* #endregion */
+
+/* #region Text */
+h1 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+    margin-bottom: 8px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-family: 'Titan One', cursive;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+    padding-left: 30px;
+}
+
+h4 {
+    font-family: 'Titan One', Cursive;
+    font-weight: lighter;
+}
+
+p {
+    padding-bottom: 16px;
+}
+
+a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: rgb(136, 136, 136);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Sets the text before the submittion box into black and white*/
+}
+
+/* #endregion */
+
+/* #region my classes and id's */
+
+.phold {
+    font-size: 30px;
+}
+
+.safety-item {
+    /* display: flex; */
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.safety-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.safety-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    flex: 1;
+}
+
+.thx {
+    padding: 25px;
+    background-color: #7EBCE6;
+}
+
+#header {
+    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    animation: water 10s ease-in-out infinite;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.logo {
+    position: relative;
+    bottom: 15px;
+}
+
+/* #endregion  */
+
+/* #region Kristen's Classes and ID's */
 
 #DiveHeader {
     font-family: 'Titan One', cursive;
@@ -121,6 +312,8 @@
     font-size: .75em;
     font-weight: bolder;
     font-style: italic;
+    /* The padding cancels out the padding from the p tag. */
+    padding-bottom:-16px;
 }
 
 .charters {
@@ -177,168 +370,55 @@
     font-style: italic;
 }
 
+/* #endregion */
 
+/* #region Cecily's Classes and ID's */
 
-/* Project: Sea Bubbles Group Assignment | Author: Mitchell Eddings | Branch: mitchell | Date Made: 16 April 2023 | Page Name: styles.css */
-
-
-
-/* #region Containers */
-body {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header {
-    background-color: #3cd3ad;
-    color: #ffffff;
-    padding-bottom: 15px;
-
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    margin: 10px 0px;
-    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
-    padding: 25px;
-    font-family: 'Titan One', cursive;
-}
-
-
-nav ul li {
-    
-    display: inline;
-    text-align: center;
-    padding: 10px;
-}
-
-
-main {
+.threeinfos {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 10% 10%;
-    background-image: linear-gradient(to bottom, #3cd3ad, #7ebce6);
 }
 
-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 100%;
+.welcomebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px 5rem;
-    background-image: linear-gradient(to bottom, #7ebce6, #3cd3ad, #7ebce6);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    animation: form-enter 0.5s ease-out;
-    /* starting max with and length of text box and making the background color and setting a border in the form*/
+.Cecily_h1{
+    font-size: 64px;
 }
 
-footer {
-    bottom: 0;
-    width: 100%;
-    /* margin: 10%; */
-    text-align: center;
-    font-family: 'Titan One', cursive;
-    background-image: linear-gradient(to top, #3cd3ad, #7ebce6);
-    /* setting the footer to be the same color and graintaint */
-}
-
-ul {
-    list-style: none;
-
-}
-
-/* #endregion */
-
-/* #region Text */
-h1 {
-    text-align: center;
-    font-family: 'Titan One', cursive;
-}
-
-h2 {
-    font-family: 'Titan One', cursive;
-    font-weight: lighter;
-}
-
-a{
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    
-}
-a:hover{
-    text-decoration: underline;
-    background-color: rgb(136, 136, 136);
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    /* Sets the text before the submittion box into black and white*/
-}
-
-/* #endregion */
-
-/* #region classes and id's */
-
-.phold {
-    font-size: 30px;
-}
-
-.safety-item {
-    /* display: flex; */
-    align-items: center;
+#h2 {
+    position: absolute;
+    margin-top: -750px;
+    color: bisque;
+    background-image: linear-gradient(to right, #3cd3ad, #4cb8c4);
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
-.safety-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
-.safety-item p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-    flex: 1;
-}
-
-.thx {
-    padding: 25px;
-    background-color: #7EBCE6;
-}
-
-#header {
+#pullup {
+    position: absolute;
+    color: bisque;
     background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
-    animation: water 10s ease-in-out infinite;
-    text-align: center;
-    margin: 0px;
+    margin-top: -225px;
+    margin-left: 700px;
+    padding-bottom: 8px;
+    border-radius: 12px;
 
 }
 
-.logo{
-    position:relative;
-    bottom: 15px;
+.info {
+    width: 30%;
+    background-image: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px;
+
 }
 
-/* #endregion  */
+/* #endregion */
 
 /* #region keyframes */
 @keyframes water {
