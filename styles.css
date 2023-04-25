@@ -200,7 +200,8 @@ label {
     color: aliceblue;
     text-align: center;
     margin-top: 0%;
-    padding-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .DiveContainer1 {
@@ -249,6 +250,7 @@ label {
 .seaTigerText {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
+    padding-top: 2%;
     padding-left: 5%;
     margin-right: 40%;
     color: aliceblue;
@@ -259,6 +261,7 @@ label {
 .yoText {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
+    padding-top: 2%;
     padding-left: 5%;
     margin-right: 40%;
     color: aliceblue;
@@ -269,6 +272,7 @@ label {
     font-size: .75em;
     font-weight: lighter;
     list-style-type: none;
+    padding-top: 3%;
     padding-left: 0;
     padding-bottom: 3%;
 }
@@ -281,6 +285,7 @@ label {
     border-radius: 5px;
     text-decoration: none;
     color: #f2f2f2;
+   
 }
 
 .bookButton:hover {
@@ -312,8 +317,8 @@ label {
     font-size: .75em;
     font-weight: bolder;
     font-style: italic;
-    /* The padding cancels out the padding from the p tag. */
-    padding-bottom:-16px;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 .charters {
@@ -322,7 +327,7 @@ label {
     font-size: 1.3em;
     background-color: aliceblue;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding-top: 5%;
+    padding-top: 9%;
     padding-left: 2%;
     padding-right: 2%;
     font-size: 2em;
@@ -351,7 +356,7 @@ label {
     column-gap: 40px;
     grid-template-columns: auto auto auto auto;
     padding: 7% 3% 3% 3%;
-    height: 700px;
+    height: 675px;
 }
 
 .reviews {
