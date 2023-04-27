@@ -458,6 +458,80 @@ label {
     }
 }
 
+/* "Mostly" responsive design */
+
+@media screen and (max-width: 600px) {
+    body {
+      margin: 0;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .seaTigerText .yoText{
+      
+      display: table;
+      text-align: center;
+      
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .DiveContainer1 {
+        width: 100%;
+        display: table;
+     
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .DiveContainer2 {
+        width: 100%;
+        display: table;
+
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .gridContainer,
+    .charters,
+    .features {
+        width: 100%;
+        display: table;
+       
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .reviewContainer {
+        width: 100%;
+        display: table;
+        background-image: none;
+        background-color: black;
+             
+           }
+}
+
+@media screen and (max-width: 600px) {
+    .bookButton1, .bookButton2 {
+        width: 100%;
+        display: inline-block;
+        margin:0;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .reviews {
+        width: 100%;
+        height: 400px;
+        
+    }
+}
+
 /* #endregion */
 
 /* #region inputs */
